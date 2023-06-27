@@ -1,0 +1,410 @@
+@font-face {
+  font-family: MullerBold;
+  src: url(./fonts/MullerBold.woff) format(woff),
+    url(./fonts/MullerBold.woff2) format(woff2);
+}
+@font-face {
+  font-family: MullerRegular;
+  src: url(./fonts/MullerRegular.woff) format(woff),
+    url(./fonts/MullerRegular.woff2) format(woff2);
+}
+body {
+  margin: 0;
+  font-family: MullerRegular;
+}
+
+.first_screen {
+  background-image: url(../img/background.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 800px;
+  position: relative;
+}
+/*малюнок*/
+.lady {
+  position: absolute;
+  top: 161px;
+  left: 935px;
+  z-index: 1;
+}
+/*Шапка сторінки*/
+.header__logo:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.header_title {
+  width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__name {
+  display: flex;
+  align-items: center;
+  width: 225.25px;
+  height: 58px;
+  font-family: "Russo One", sans-serif;
+  font-size: 20px;
+  text-shadow: 2px -2px 11px #46b1de;
+  color: #46b1de;
+}
+.header__nav {
+  display: grid;
+  height: 58px;
+  grid-template-columns: 0fr 0fr 0fr;
+  grid-column-gap: 44px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: #46b1de;
+  padding: 0.5px;
+  text-shadow: 2px -2px 11px #46b1de;
+}
+.tel {
+  display: flex;
+  align-items: center;
+}
+
+.phone_img:hover {
+  filter: invert(62%) sepia(89%) saturate(887%) hue-rotate(166deg)
+    brightness(94%) contrast(84%);
+}
+
+/*Опис та контент*/
+.about {
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+  margin-left: 216px;
+  margin-top: 120px;
+}
+
+.about__text {
+  font-family: "Russo One", sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: black;
+  margin: 0;
+}
+.about__text span:first-child {
+  color: black;
+}
+
+.about__text span:nth-child(2) {
+  color: #46b1de;
+  text-transform: uppercase;
+  text-shadow: 2px -2px 11px #46b1de;
+  color: #46b1de;
+}
+.about__text span:last-child {
+  line-height: normal;
+  text-transform: initial;
+  font-size: 17px;
+  padding-bottom: 0;
+  display: block;
+}
+/*Кнопки*/
+.btn {
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+.btn a {
+  display: inline;
+  border: 1px solid black;
+}
+.btn a:first-child:hover {
+  background-color: white;
+  color: #46b1de;
+  -webkit-box-shadow: 1px -1px 31px 17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px -1px 31px 17px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px -1px 31px 17px rgba(0, 0, 0, 0.75);
+  text-shadow: 2px -2px 11px black;
+}
+.btn:hover a:last-child:hover {
+  background-color: #46b1de;
+  color: white;
+  -webkit-box-shadow: 1px -1px 31px 17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px -1px 31px 17px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px -1px 31px 17px rgba(0, 0, 0, 0.75);
+  text-shadow: 2px -2px 11px black;
+}
+
+.btn a:first-child {
+  background-color: #46b1de;
+  color: white;
+  padding: 15px 57px;
+  margin-left: 20px;
+}
+.btn a:last-child {
+  background-color: white;
+  color: #46b1de;
+  padding: 15px 40px;
+  margin-left: 70px;
+}
+/*Блоки*/
+.blocks {
+  position: relative;
+  margin-top: 330px;
+  width: 1150px;
+  height: 97px;
+  display: grid;
+  margin-left: 170px;
+  grid-template-columns: repeat(3, 0fr);
+  justify-content: space-around;
+}
+
+.blocks__reviews {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  height: 97px;
+  padding: 10px 10px;
+  background-color: white;
+  text-align: left;
+  align-items: center;
+  z-index: 2;
+}
+.blocks__reviews span {
+  padding-right: 10px;
+  font-size: 60px;
+  color: #46b1de;
+  font-family: MullerBold-woff;
+}
+.blocks__reviews:hover {
+  background-color: #46b1de;
+  color: white;
+  padding: 1px;
+  -webkit-box-shadow: 1px -1px 31px 17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px -1px 31px 17px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px -1px 31px 17px rgba(0, 0, 0, 0.75);
+  text-shadow: 2px -2px 11px black;
+}
+
+.blocks__reviews:hover span {
+  color: black;
+}
+
+/*Контейнери*/
+.preference {
+  margin-top: 150px;
+  width: 1150px;
+  margin-left: 256px;
+  text-align: center;
+}
+.preference span {
+  color: black;
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  font-size: 35px;
+}
+.preference span span {
+  color: #46b1de;
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  text-shadow: 2px -2px 11px #46b1de;
+}
+
+.preference__container {
+  max-width: max-content;
+  max-height: 100%;
+  padding: 20px;
+  background-color: #afd3e4;
+  border-radius: 3%;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.container {
+  width: 300px;
+  height: 175px;
+  background-color: white;
+  border-radius: 3%;
+}
+.container span {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 20px;
+  color: #46b1de;
+  padding: 5px;
+}
+.container p {
+  padding: 10px;
+  text-align: left;
+}
+.container span span {
+  font-size: 35px;
+  padding-right: 20px;
+}
+
+.footer {
+  position: relative;
+  margin: 20px 50px auto;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  justify-content: space-between;
+  max-width: 100%;
+  border-radius: 5%;
+  max-height: max-content;
+  background: linear-gradient(to right, #c0dbe4, #5cb0d4, #0086c0);
+  font-size: 15px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+  font-family: "Russo One", sans-serif;
+  font-size: 20px;
+  color: #0f2d4a;
+}
+.footer__logo span span {
+  text-transform: uppercase;
+}
+.footer__links {
+  display: grid;
+  grid: template columns 50px 50px;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding-top: 50px;
+  gap: 15px 0px;
+  align-items: center;
+  grid-template-areas:
+    "home work"
+    "services work"
+    "lang work";
+}
+.links__home {
+  grid-area: home;
+}
+.links__services {
+  grid-area: services;
+}
+.links__lang {
+  grid-area: lang;
+}
+.footer__work {
+  grid-area: work;
+  padding-top: 20px;
+}
+.work--day {
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+.work--time {
+  padding-top: 0;
+}
+
+.footer__contacts {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.contacts__name {
+  padding-top: 5px;
+}
+.contacts__name span {
+  font-size: 25px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+}
+.contacts__social {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  gap: 10px;
+}
+.contacts__social span {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 10px;
+}
+.phone,
+.instagram,
+.email,
+.messanger {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+}
+.email img {
+  height: 32px;
+  width: 28px;
+}
+.watsapp {
+  height: 32px;
+  width: 28px;
+}
+@media (max-width: 1600px) {
+  .first_screen {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1200px) {
+  .first_screen {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 1000px) {
+  .blocks,
+  .btn,
+  .about,
+  .header__name,
+  .header__nav,
+  .header_title,
+  .tel,
+  .preference {
+    display: block;
+    width: 100%;
+    margin: 20px 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .preference__container {
+    margin-top: 20px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-box1 {
+    order: 1;
+  }
+  .container-box2 {
+    order: 2;
+  }
+  .container-box3 {
+    order: 3;
+  }
+  .container-box4 {
+    order: 4;
+  }
+  .container-box5 {
+    order: 5;
+  }
+  .container-box6 {
+    order: 6;
+  }
+}
