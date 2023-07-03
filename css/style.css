@@ -297,6 +297,8 @@ a:hover {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-top: 10px;
+  margin-top: -5px;
 }
 .tooth_content {
   padding-top: 50px;
@@ -416,6 +418,121 @@ a:hover {
   transform: translateX(-50%);
 }
 
+/*застереження*/
+.attention {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 59px;
+  margin-bottom: 100px;
+}
+.attention span {
+  width: 478px;
+  height: 33px;
+  flex-direction: column;
+  color: #46b1de;
+  font-size: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/*форма*/
+.appointment {
+  width: 845px;
+  height: 265px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: solid 1px #888;
+}
+
+.appointment__title {
+  position: relative;
+  display: flex;
+  width: 763px;
+  flex-direction: column;
+  padding: 29px 33px 7px 29px;
+  justify-content: space-around;
+  flex-shrink: 0;
+  color: var(--unnamed, #1b1d1f);
+  text-align: center;
+  font-size: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.appointment__disc {
+  color: #1b1d1f;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  padding-bottom: 44px;
+}
+.buttons {
+  display: flex;
+}
+.form_user {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.form__input,
+.form__tel {
+  width: 233px;
+  height: 57px;
+  border-radius: 8px;
+  background: rgba(217, 217, 217, 0.71);
+  color: rgba(27, 29, 31, 0.51);
+  text-align: center;
+  align-items: center;
+  font-size: 19px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  background-repeat: no-repeat;
+  background-position: 5%;
+  background-size: auto;
+  position: relative;
+}
+
+.form__input {
+  background-image: url(../img/user%204.png);
+}
+
+.form__tel {
+  background-image: url(../img/phone_user.svg);
+}
+.form_send {
+  flex-basis: 200px;
+  width: 180px;
+  height: 57px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #46b1de;
+  color: #fff;
+  text-align: center;
+  font-size: 19px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: uppercase;
+}
 /*футер*/
 .footer {
   position: relative;
