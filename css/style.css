@@ -293,7 +293,7 @@ a:hover {
   display: flex;
   align-items: center;
   text-align: left;
-  font-size: 20px;
+  font-size: 15px;
   color: #46b1de;
   padding: 5px;
 }
@@ -409,7 +409,6 @@ a:hover {
   flex-direction: column;
   grid-area: 3 / 2 / 4 / 4;
   padding-top: 45px;
-  padding-left: 20px;
   padding-left: 250px;
 }
 /*картинка*/
@@ -503,8 +502,6 @@ a:hover {
   border: 0.5px #d9d9d9 solid;
   outline: solid 1px #888;
   position: relative;
-  width: 845px;
-  height: 265px;
   background: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -551,9 +548,7 @@ a:hover {
   line-height: 140%;
   padding-bottom: 44px;
 }
-.buttons {
-  display: flex;
-}
+
 .form_user {
   display: flex;
   width: 100%;
@@ -859,15 +854,263 @@ a:hover {
     background: #fff;
     box-shadow: 0px 2px 10px 0px #dde0dc;
   }
+  /*блоки*/
   .blocks {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 300px 55px 0 55px;
   }
-  .footer {
+  .blocks__reviews {
+    border: 1px solid black;
+    width: 207px;
+    height: 640px;
+    margin-top: 10px;
+    background-color: white;
+    text-align: left;
+    z-index: 2;
+    border-radius: 8px;
+    border: 1px solid #d8e1e1;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 15px;
+  }
+  .blocks__reviews span {
+    padding-right: 10px;
+    font-size: 40px;
+    color: #46b1de;
+    font-family: MullerBold-woff;
+  }
+  /*Контейнери*/
+  .preference {
+    display: flex;
+    flex-direction: column;
+    max-width: 282px;
+    margin: 0 auto;
+    margin-top: 250px;
+    border-radius: 3%;
+    align-items: center;
+  }
+  .preference p {
+    font-size: 12px;
+    font-family: "Roboto";
+    text-align: center;
+  }
+  .preference span {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-size: 20px;
+  }
+  .preference span span {
+    color: #46b1de;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    text-align: center;
+    text-shadow: 2px -2px 11px #46b1de;
+  }
+  .preference__container {
+    width: 282px;
+    height: 632px;
+    padding: 20px;
+    background-color: #afd3e4;
+    border-radius: 3%;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    width: 208px;
+    height: 94px;
+    background-color: white;
+    border-radius: 3%;
+    display: inline-flex;
+  }
+  .container span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    font-size: 20px;
+    color: #46b1de;
+  }
+  .container span span {
+    font-size: 20px;
+    padding-right: 20px;
+  }
+  .container p {
+    display: none;
+  }
+  .container-box1 {
+    order: 1;
+  }
+  .container-box2 {
+    order: 2;
+  }
+  .container-box3 {
+    order: 3;
+  }
+  .container-box4 {
+    order: 4;
+  }
+  .container-box5 {
+    order: 5;
+  }
+  .container-box6 {
+    order: 6;
+  }
+
+  /*зуб*/
+  .tooth {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 3%;
+  }
+  .tooth__title span {
+    font-size: 20px;
+  }
+  .tooth_content span {
+    font-size: 10px;
+  }
+  .tooth_content p {
+    display: none;
+  }
+  .tooth_content {
+    padding-top: 5px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 135px 1fr;
+    grid-template-rows: repeat(6, 30px);
+    grid-column-gap: 5px;
+    grid-row-gap: 20px;
+  }
+  .content1,
+  .content2,
+  .content3,
+  .content4,
+  .content5,
+  .content6 {
+    width: min-content;
+    height: min-content;
+    text-align: left;
+    padding: 0;
+
+    shape-outside: circle(50%);
+  }
+  .content1 {
+    padding-left: 60px;
+    padding-top: 20px;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .content2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .content3 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .content4 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .content5 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  .content6 {
+    grid-area: 6 / 1 / 7 / 2;
+    padding-left: 20px;
+  }
+  .tooth__img {
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: 200px;
+    border: radius 10%;
+    grid-area: 2 / 2 / 2 / 3;
+  }
+  .tooth__img img {
+    width: 150px;
+    height: 150px;
+  }
+  .circle {
+    display: none;
+  }
+
+  .attention {
+    display: none;
+  }
+  /*форма*/
+  .appointment {
+    width: 297px;
+    height: 223px;
+  }
+  .appointment-container {
+    width: 290px;
+    height: 208px;
+    margin: 0 auto;
+    top: 5px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .appointment__title {
+    width: 268px;
+    height: 24px;
+    font-size: 22px;
+    padding: 15px 33px 7px 15px;
+  }
+  .appointment__disc {
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+  .form_user {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__input,
+  .form__tel,
+  .form_send {
+    width: 177px;
+    height: 29px;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .form_send {
+    flex-basis: 40px;
+  }
+
+  .line12 {
+    display: none;
+  }
+  .form_user {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+
+  .photo_pacients {
     margin-top: 50px;
+    width: 300px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  /*футер*/
+  .footer {
+    margin-top: 30px;
     height: 568px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-   
   }
   .footer__card {
     margin: 0 auto;
@@ -890,7 +1133,6 @@ a:hover {
   .footer__links {
     display: grid;
     grid: template columns 50px 50px;
-    grid-template-rows: 1fr 1fr 1fr;
     padding-top: 50px;
     gap: 32px 100px;
     align-items: center;
@@ -919,9 +1161,9 @@ a:hover {
   .work--time {
     padding-top: 0;
   }
-.links__services {
-  color: white;
-}
+  .links__services {
+    color: white;
+  }
 
   .footer__contacts {
     height: 282px;
