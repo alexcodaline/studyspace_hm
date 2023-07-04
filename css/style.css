@@ -80,6 +80,42 @@ a:hover {
     brightness(94%) contrast(84%);
 }
 
+.header__lang {
+  width: 77px;
+  height: 23px;
+  position: relative;
+}
+.header__line {
+  width: 22px;
+  height: 0px;
+  left: 40px;
+  top: 0px;
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+  border: 0.5px #1b1d1f solid;
+}
+.lang_ua {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.lang_en {
+  left: 51px;
+  top: 0px;
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 400;
+  word-wrap: break-word;
+}
 /*Опис та контент*/
 .about {
   width: 600px;
@@ -433,23 +469,44 @@ a:hover {
   flex-direction: column;
   color: #46b1de;
   font-size: 20px;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
 }
 
 /*форма*/
+
 .appointment {
   width: 845px;
   height: 265px;
   margin: 0 auto;
   text-align: center;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 0.5px #d9d9d9 solid;
   outline: solid 1px #888;
+  position: relative;
+  width: 845px;
+  height: 265px;
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+.appointment-container {
+  width: 821px;
+  height: 247px;
+  background: white;
+  border-radius: 10px;
+  border-left: 0.5px #d9d9d9 solid;
+  border-top: 0.5px #d9d9d9 solid;
+  border-right: 0.5px #d9d9d9 solid;
+  border-bottom: 0.5px #d9d9d9 solid;
+  backdrop-filter: blur(4px);
+  position: absolute;
+  top: 10px;
+  right: 9px;
+  bottom: 8px;
+  left: 15px;
+}
 .appointment__title {
   position: relative;
   display: flex;
@@ -485,7 +542,23 @@ a:hover {
   width: 100%;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
+.line12 {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  transform-origin: 0 0;
+  width: 30px;
+  height: 0;
+  border: 0.5px black solid;
+}
+
+.form__group {
+  position: relative;
+}
+
 .form__input,
 .form__tel {
   width: 233px;
@@ -505,6 +578,7 @@ a:hover {
   background-position: 5%;
   background-size: auto;
   position: relative;
+  word-wrap: break-word;
 }
 
 .form__input {
@@ -533,10 +607,20 @@ a:hover {
   line-height: 140%;
   text-transform: uppercase;
 }
+/*фото пацієнтів*/
+.photo_pacients {
+  margin: 0 auto;
+  margin-top: 90px;
+  width: 979px;
+  height: 129px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 /*футер*/
 .footer {
+  margin-top: 90px;
   position: relative;
-  margin: 20px 50px auto;
   justify-content: center;
   display: grid;
   grid-template-columns: 400px 400px;

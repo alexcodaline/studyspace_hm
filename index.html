@@ -38,6 +38,11 @@
                 <img class="phone_img" src="./img/phone.svg" alt="Телефон">
                 <a class="tel__number" href="tel:">099-999-99-99</a>
             </div>
+            <div class="header__lang">
+                <div class="header__line" style=""></div>
+                <div class="lang_ua">UA </div>
+                <div class="lang_en"">EN</div>
+              </div>
         </header>
         <div class="about">
             <p class="about__text">
@@ -147,17 +152,28 @@
     </section>
 
     <section class="appointment">
-        <div class="appointment__title">Make an appointment</div>
-        <div class="appointment__disc">Fill out the form and we will contact you to make an appointment</div>
-        <div class="form_list">
-            <form action="url" method="post" class="form_user">
-                <input type="text" name="user" id="user" class="form__input" placeholder="Your name">
-               <input type="tel" name="phone" id="user_phone" class="form__tel" placeholder="Phone number">
-                <button class="form_send" type="submit">
-                    Sing Up
-                </button>
-            </form>
+        <div class="appointment-container">
+            <div class="appointment__title">Make an appointment</div>
+            <div class="appointment__disc">Fill out the form and we will contact you to make an appointment</div>
+            <div class="form_list">
+                <form action="url" method="post" class="form_user">
+                    <div class="form__group">
+                        <input type="text" name="user" id="user" class="form__input" placeholder="Your name">
+                        <div class="line12"></div>
+                    </div>
+                    <div class="form__group">
+                        <input type="tel" name="phone" id="user_phone" class="form__tel" placeholder="Phone number">
+                        <div class="line12"></div>
+                    </div>
+                    <button class="form_send" type="submit">Sign Up</button>
+                </form>
+            </div>
         </div>
+    </section>
+    <section class="photo_pacients">
+        <img src="./img/img1.png" alt="">
+        <img src="./img/img2.png" alt="">
+        <img src="./img/img3.png" alt="">
     </section>
 
     <footer class="footer" id="footer">
